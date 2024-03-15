@@ -1,0 +1,407 @@
+body{
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: "slnt" 0;
+    background:#F3F5FC;  /*#CED4DA*/ 
+    min-height: 100vh;
+}
+
+/*-----------ENCABEZADO----------------------------*/
+
+.logo{
+    width:80px;
+    margin-top: 15px;
+}
+
+header{
+    background-color:#F3F5FC;
+
+  }
+
+  .encabezado{
+    height: 50px;
+    width: 90%;
+    margin: auto;
+    background-color:#F3F5FC;
+}
+
+
+
+.encabezado span{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 10px;
+    color: #0A3871;
+    line-height: 15px;
+} 
+
+.encabezado strong{
+font-weight: bold;
+}
+
+/*-------------------MAIN-----------------------*/
+
+
+main{
+display: flex;
+margin-bottom: 25px;
+}
+
+
+.main{
+   width: 80.5%;
+   min-height: calc(100vh - 91px -72px);
+   align-items: end;
+   margin: auto 40px auto auto;
+   display: grid; 
+   grid-template-columns: 50% 400px;
+   background-color:#F3F5FC;
+
+}
+
+/*parte izquierda*/
+
+.zona-entrada{
+    background-color: #F3F5FC;
+    height: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/*entrda de texto*/
+.Entrada-texto{
+    font-size: 32px;
+    line-height: 48px;
+    color:#0A3871;
+    background-color:rgba(243,245,252, 0);
+    border-color:#F3F5FC;
+    text-transform: lowercase;
+    outline: 0;
+    resize: none;
+    width: 70%;
+   }
+
+
+   .Entrada-texto::placeholder{
+    color:#0A3871;
+    font-size: 32px;
+   }
+   
+
+   .advertencia{
+    color: #495057; 
+    font-size: 12px;
+    line-height: 18px;
+}
+
+   /*parte derecha*/
+
+.zona-desencriptar{ 
+    min-height: calc(100% + 30px);
+    border: 0;
+    background-color: white;
+    border-radius: 32px;
+    box-sizing: border-box;
+    box-shadow: #495057;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 0px 24px 32px -8px #00000014;
+    padding-bottom: 32px;
+
+}
+
+/*salida de texto*/
+.texto-encriptado{
+    color:#495057;
+    border-color: #0A3871;
+    width:84%;
+    margin-left: auto;
+    margin-right: auto;
+    resize: none;
+    text-transform: lowercase;
+    outline: none;
+    font-size: 24px;
+    line-height: 36px;
+    background:none;
+    border: none;
+    display: none;
+
+}
+
+
+textarea{
+    font-family: "Inter", sans-serif;
+}
+
+
+/* BOTONES*/
+
+.botones-texto{  /*Botones ladoizquiero y texto*/
+background-color:#F3F5FC;
+}
+
+.botones{  /* 2Botones*/
+display: flex;
+margin-top: 16px;
+gap: 24px;
+flex-wrap: wrap;
+margin-bottom: 20px;
+}
+
+
+.encriptar{  /*Boton encriptar*/
+    background: #0A3871;
+    border-radius: 24px;
+    border: none;
+    font-size: 16px;
+    line-height: 16.9px;
+    text-align: center;
+    font-weight: 400;
+    color: white;
+    width: 40%;
+    max-width: 328px;
+    height: 67px;
+    transition: .5s;
+    gap: 8px;
+}
+
+
+
+.desencriptar {  /*Boton desencriptar*/
+    color: #0A3871;
+    border-radius: 24px;  
+    border: 1px solid;
+    border-color:#0A3871;
+    font-size: 16px;
+    line-height: 16.9px;
+    text-align: center;
+    width: 40%;
+    max-width: 328px;
+    font-weight: 400;
+    height: 67px;
+    background: #E9ECF8;
+    transition: .5s;
+
+}
+
+
+.copiar  /*Boton copiar*/
+{
+    color: #0A3871;
+    font-size: 16px;
+    border-radius: 24px;
+    border: 1px solid;
+    border-color:#0A3871;
+    line-height: 16.9px;
+    text-align: center;
+    font-weight: 400;
+    width: 80%;
+    max-width: 336px;
+    min-height: 67px;
+    background: #E9ECF8;
+    transition: .5s;
+    margin-left: auto;
+    margin-right: auto;
+    display: none;
+}
+
+ /*ACCIONES DE BOTONES*/
+.encriptar:hover{
+    background: #317dda;
+    scale:105%;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+.desencriptar:hover{
+        background: #999a9d;
+        scale:105%;
+        align-items: center;
+        font-weight: bold;     
+        cursor: pointer;  
+
+        }
+
+.copiar:hover{
+            background: #999a9d;
+            scale:105%;
+            font-weight: bold;
+            cursor: pointer;
+            }
+
+/*EFECTOS BOTONES*/
+
+
+/*SIN TEXTO PARA ENCRIPTAR*/
+
+#muñeco{
+    scale: 60%;
+    margin: 10px 30px;
+    width: 336px;
+    height: 304px;
+    margin-left: auto;
+    margin-right: auto;
+    /*display: none;*/
+
+}
+
+.no-encontrado{
+    font-weight: 700;
+    text-align: center;
+    font-size: 24px;
+    line-height: 24px;
+    color: #343A40;
+   position: relative;
+
+}
+
+
+.ingresa-mesaje{
+    font-weight: 400;
+    text-align: center;
+    font-size: 16px;
+    line-height: 24px;
+    color:  #495057;
+    padding-top: 15px;
+    padding-bottom: 20px;
+}
+
+
+footer{
+    background-color: #0A3871;
+    color: white;
+    font-size: 18px;
+    width: 100%;
+    height: 50px;
+    padding-top: 25px;
+    padding-left: 20px;
+    text-align: left;
+    display: grid;
+    grid-template-columns:repeat(2 1fr);
+}
+
+.nombre{
+width:50%;
+gap:2px;
+display:flex;
+align-items: center;
+gap: 12px;
+}
+
+#linkedin{
+    width: 30px;
+    height: 30px;
+    display: inline;
+    padding-left: 10px;
+   
+}
+
+#linkedin:hover{
+scale:115%;
+cursor: pointer;
+}
+
+#carrera{
+    font-size: 12px;
+
+}
+
+@media screen and (max-width:800px){
+
+       
+    header{
+        width: 100%;
+    }
+
+    .main{
+        grid-template-columns: 1fr;
+        grid-template-rows: 70% 30%;
+        width: 100%;
+        margin: auto 5%;
+    }   
+
+    #muñeco{
+        display: none;
+
+    }
+
+    .botones{
+        padding-bottom: 30px;
+    }
+    .zona-desencriptar{
+        height: 100%;
+    }
+    .zona-entrada{
+       width: 90%;
+    }
+
+
+    .botones{
+        justify-content: center;
+    }
+
+    .encriptar, .desencriptar{
+        width: 45%;
+    }
+    .encabezado{
+        width: 90%;
+    }
+    .footer, .nombre{
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width:500px){
+
+           
+    header{
+        width: 100%;
+    }
+    .main{     
+        margin: auto 5%;
+    }  
+    
+    
+    .encriptar, .desencriptar, .copia{
+        width: 90%;
+        max-width: none;
+        
+    }
+
+    .botones{
+        padding-bottom: 30px;
+    }
+
+    .encabezado{
+        width: 90%;
+    }
+
+    .zona-desencriptar{
+        height: 100%;
+    }
+    
+    .zona-entrada{
+        margin-left:5%;
+        margin-right:5%;
+    }
+
+    .Entrada-texto{
+        width: 98%;
+    }
+
+    .encabezado span{
+        display:block;
+    text-align: center;  
+    margin-right: 5px;
+    }
+
+    .footer, .nombre{
+        width: 100%;
+    }
+
+}

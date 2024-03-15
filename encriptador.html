@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Encriptador</title>
+
+        <link rel="stylesheet" href="reset.css">        
+        <link rel="stylesheet" href="encriptador.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+        
+
+    </head>
+
+    <body>
+        <header>
+                <div class="encabezado">
+                <img src="Logo.png" class="logo" alt="Logotipo Alura" > 
+                <span><strong> Encriptador de Texto </strong> ¡Conviertete en un Agente Secreto!</span>        
+                </div>
+         </header>
+
+        <main>
+
+            <div class="main">
+                <div class="zona-entrada">
+                    <textarea class="Entrada-texto" id="Entrada-texto" rows="9" placeholder="Escriba el texto aquí"></textarea>  
+                    <div class="botones-texto">
+                        <span> ⚠️ Solo letras minusculas sin acentos</span>
+                            <div class="botones">
+                                <button onclick="encriptar();" id= "encriptar" class="encriptar">Encriptar</button>
+                                <button onclick="desencriptar();" id="desencripta" class="desencriptar">Desencriptar</button>
+                            </div>
+                    </div>
+                </div>
+
+                <section class="zona-desencriptar">
+                        <img src="Muñeco.png" id="muñeco">
+                        <p class="no-encontrado" id="no-encontrado"> Ningun mensaje fue encontrado</p>
+                        <p class="ingresa-mesaje" id="ingresa-mensaje"> Ingresa el mesaje que deseas desencriptar</p>
+                        <textarea class="texto-encriptado"  rows="9" id="texto_encriptado" placeholder="Escriba el texto aquí"></textarea>  
+                        <button class="copiar" id="copiar" onclick="copiar();">Copiar</button>
+  
+                </section>
+            </div>
+        </main>
+
+        <footer>
+            <div class="nombre">
+                <a href="https://www.linkedin.com/in/karina-dennis-lópez-galván-77652b238"><img src="link.png" id="linkedin"></a>
+            <p>Karina Dennis López Galván</p>  
+        </div>
+        </footer>
+        <script src="encriptador.js"></script>
+    </body>
+</html>
+
+
